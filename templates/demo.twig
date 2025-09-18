@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <title>Faux Dashboard</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <header>
+        <h1>Faux Dashboard VulnApp</h1>
+        <nav>
+            <a href="dashboard.php">Dashboard</a> |
+            <a href="profile.php">Profil</a> |
+            <a href="logout.php">Déconnexion</a>
+        </nav>
+    </header>
+
+    <section>
+        <h2>Bienvenue, utilisateur</h2>
+        <p>Voici vos données :</p>
+        <p>Ajouter du contenu avec ?input=value </p>
+        <div class="user-input">
+            <pre>{{ user_input | raw}}</pre>
+        </div>
+    </section>
+
+    <footer>
+        <p>© VulnApp 2025</p>
+    </footer>
+</body>
+</html>
